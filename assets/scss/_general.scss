@@ -1,0 +1,64 @@
+// Bootstrap theme
+
+$primary: #6c57ce;
+
+.btn-primary {
+  @include button-variant($primary, darken($primary, 7.5%), darken($primary, 10%), lighten($primary,5%), lighten($primary, 10%), darken($primary,30%));
+}
+.btn-outline-primary {
+  @include button-outline-variant($primary, #fff, lighten($primary,5%), $primary);
+}
+
+// General Style
+
+main {
+  * {
+    transition: all 0.2s ease;
+  }
+}
+img, svg {
+  max-width: 100%;
+}
+
+// Navigation
+
+.navbar-brand {
+  img {
+    display: inline-block;
+    max-width: 225px;
+    height: auto;
+  }
+}
+
+// Card Component
+
+.card {
+  border: 0;
+  margin-bottom: 4rem;
+  .card-body {
+    padding: 0;
+  }
+  .card-img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .card-title {
+    margin: 1rem 0;
+  }
+  p {
+    margin: 0;
+  }
+  .cat {
+    display: inline-block;
+    margin: 1rem 0 0;
+    text-transform: uppercase;
+  }
+  .date {
+    font-style: italic;
+  }
+  .card-footer {
+    padding: 1rem 0;
+    font-size: 0.8rem;
+  }
+}
